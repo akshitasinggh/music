@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+   width: 100%;
+   background-image: url("photo-1524678606370-a47ad25cb82a.webp");
+   background-size: cover;
+   background-position: center;
+
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 15px;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    position:absolute;
+    top:30%;
+}
+.left{
+    margin-left: 6%;
+
+}
+.left h1{
+    font-size: 90px;
+    color: #fff ;
+    line-height: 110px;
+    float: left;
+}
+.right{
+    float: right;
+    margin-right: 6%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline;
+}
+.right p{
+    font-size: 36px;
+    color: #5f5f5f;
+    font-weight: 200;
+    margin-right: 15px;
+    
+}
+.right ol{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    color: rgb(25, 140, 150);
+    
+}
+.icons{
+    cursor: pointer;
+    color: #5f5f5f;
+    background-color: rgb(32, 170, 165);
+
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: rgb(45, 188, 186);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+/* right part */
+.bottom .middle {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom .middle button {
+    
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: rgb(83, 219, 214);
+  }
+  .bottom #title {
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 35px;
+  }
+  
+  .bottom .duration {
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 40px;
+  }
+  .bottom .duration p {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  #play {
+    background: #f38299e3;
+  }
+  .bottom button:hover {
+    background: #f38299e3;
+  }
+  .bottom i:before {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .bottom .show_song_no {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .bottom .show_song_no p:nth-child(2) {
+    margin: 0 5px;
+  }
+  
+/* both range slider part */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #f38299e3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .right input[type="range"] {
+    width: 40%;
+  }
+  
+.bottom .volume {
+    position: absolute;
+    bottom: 10%;
+    left: 1150px;
+    width: 20%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #fff;
+  }
+  .bottom .volume p {
+    font-size: 15px;
+  }
+  .bottom .volume i {
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 2px 5px;
+    background:#f38299e3;
+  }
+  .bottom .volume i:hover {
+    background: rgba(226, 97, 129, 0.966);
+  }
+  .volume #volume_show {
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+    background: rgba(245, 245, 245, 0.1);
+  }
+
+  @media screen and (max-width:646px) {
+    .bottom .volume{
+        left:478px;
+    }
+  }
+  @media screen and (max-width:471px){
+         .bottom .volume{
+            left: 383px;
+         }
+         .content .right{
+            margin-right: -4%;
+            margin-top: -307px;
+         }
+         .content .left{
+            margin-left: 2%;
+         }
+  }
+    
+  
