@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+         <img src="Music-512.webp" class="logo">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SPEIFICATION</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONNECT</a></li>
+        </ul>
+       </div> 
+    </div>
+    <div class="content">
+        <div class="left">
+            <h1>Feel<br> The<br> Music!</h1>
+        </div>
+         <div class="right">
+            <P>SONGS LIST:-</P>
+            <ol class="SONGS LIST">
+                <li class="SONGS LIST">AKHAR</li>
+                <li class="SONGS LIST">BAARI</li>
+                 <li class="SONGS LIST">KHABBI SEAT</li>
+                <li class="SONGS LIST">SAJJAN RAAZI</li>
+                <li class="SONGS LIST">SOHNE SOHNE</li>
+              </ol>
+
+         </div>   
+    </div>
+    <div class="bottom">
+        <p id="title">title.mp3</p>
+        
+        <!--- middle part --->
+        <div class="middle">
+           <button onclick="previous_song()" id="pre"><i class="fa-solid fa-2x fa-step-backward" aria-hidden="true"></i></button>
+           <button onclick="justplay()" id="play"><i class="fa-solid fa-2x fa-circle-play" aria-hidden="true"></i></button>
+           <button onclick="next_song()" id="next"><i class="fa-solid fa-2x fa-step-forward" aria-hidden="true"></i></button>
+        </div>
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+         </div>
+        <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+    </div>
+    <audio id="song">
+        <source src="Baari (DJJass).mp3" type="audio/mp3">
+    </audio>
+        
+   
+    <script src="https://kit.fontawesome.com/7d5b813b26.js" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
